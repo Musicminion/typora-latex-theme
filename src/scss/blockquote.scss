@@ -9,6 +9,12 @@ blockquote {
   padding-right: 2em;
   /* 左边框离页面边的距离 */
   margin-left: 0;
+  /* 为了让引言显示的更加明显，特意增加背景色和边框 */
+  /* 论文里面显然不需要，但是个人觉得有背景色和边框更优雅一些 */
+  background-color: #f1f1f1;
+  border-width: 0.5px;
+  border-style: dashed;
+  border-color: #000;
 }
 
 blockquote p:first-child {
