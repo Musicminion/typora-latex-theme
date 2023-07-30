@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       unconditional-invoking:
-        description: '手动部署'
+        description: '手动发布'
         type: boolean
         required: true
         default: true
@@ -25,6 +25,7 @@ jobs:
       - name: Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
+          automatic_release_tag: 'latest'
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: false
           files: |
