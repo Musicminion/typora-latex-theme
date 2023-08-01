@@ -111,3 +111,13 @@ $$
 - [du33169/typora-theme-essay_cn](https://github.com/du33169/typora-theme-essay_cn)  
 
 感谢 [@大啊好我r中之](https://space.bilibili.com/239828907) 制作介绍视频  
+
+## 开发操作
+
+1. 首先，请打开GitAction对于仓库的写操作权限
+2. 需要发布一个新的Release的时候，执行
+
+```bash
+git tag -a v1.0.1 -m "Version 1.0.1 release"
+git push origin
+```
