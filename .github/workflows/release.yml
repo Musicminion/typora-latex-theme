@@ -1,15 +1,18 @@
 name: Release
+
 on:
-  create:
+  push:
     tags:
-      - v*
-  workflow_dispatch:
-    inputs:
-      unconditional-invoking:
-        description: '手动发布'
-        type: boolean
-        required: true
-        default: true
+      - "v*"
+      
+#   workflow_dispatch:
+#     inputs:
+#       unconditional-invoking:
+#         description: '手动发布'
+#         type: boolean
+#         required: true
+#         default: true
+
 jobs:
   release:
     runs-on: ubuntu-latest
