@@ -265,4 +265,15 @@
   footer.ty-footer {
     border-top: 1px solid #222;
   }
+
+  blockquote {
+    /* 为了让引言显示的更加明显，特意增加背景色和边框 */
+    /* 论文里面显然不需要，但是个人觉得有背景色和边框更优雅一些 */
+    background-color: #474747;
+    border-width: 0.5px;
+    border-style: dashed;
+    border-color: #fff;
+  }
+
+
 }
